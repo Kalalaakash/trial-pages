@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.2;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.window {
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    top: 25%;
+    position: relative;
+    background-color: rgba(0,0,0,0.7);
+    margin: auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 5px;
+}
+
+.intro-text {
+    padding: 70px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color:white;
+}
+.signin {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    width:90%;
+    height:110%;    
+    box-shadow: 0 3px 20px black;
+    border-radius: 4px;
+}
+
+.signupdiv {
+    margin-top: 20px;
+}
+
+.intro-text h1 {
+    font-size: 35px;
+}
+
+.intro-text p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.btn-2 {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 9px;
+    padding-right: 43px;
+    padding-left: 43px;
+    background-color:rgba(235, 120, 66, 0.876);
+    border: 0;
+    border-radius: 5px; 
+    color:white;
+}
+
+.formbox {
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.inputarea {
+    border: 0;
+    background-color: transparent;
+    margin-top: 30px;
+    border-bottom: 1px gray solid;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.formbox h1 {
+    color: rgba(235, 120, 66, 0.876);
+    margin-bottom: 30px;
+}
+
+.btnarea {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-1 {
+    cursor: pointer;
+    background-color: transparent;
+    color: gray;
+    border: 0;
+}
+
+.btn-2:hover {
+    background-color: grey;
+}
+
+.signupbtn:hover {
+    padding: 8px;
+    padding-right: 42px;
+    padding-left: 42px;
+    background-color: transparent;
+    border: 1px #fff solid;
+}
+
+.btn-1:hover {
+    border-bottom: 1px gray solid;
+}
+
+@media(max-width:1010px) {
+    .window {
+        width: 90vw;
+        margin:auto;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        width: 90vw;
+    }
+    .signin {
+        height: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width:478px) {
+    .btnarea {
+        flex-direction: column-reverse;
+    }
+    .btn-1 {
+        margin-top: 20px;
+    }
+}
