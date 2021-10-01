@@ -8,7 +8,8 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.5;
+    line-height: 2;
+    color: red;
     background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
 }
 
